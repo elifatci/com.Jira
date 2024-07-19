@@ -24,7 +24,7 @@ public class JiraStepDefinition extends Base {
 
     @Then("Email textboxinin gorunur ve islevsel oldugu dogrulanir")
     public void email_textboxinin_gorunur_ve_islevsel_oldugu_dogrulanir() {
-        jiraPage.verifyDisplayEnabled(jiraPage.textBoxEmail);
+        ReusableMethods.verifyDisplayEnabled(jiraPage.textBoxEmail);
     }
 
     @Then("Email textboxina gecerli {string} adresi girilir")
@@ -34,7 +34,7 @@ public class JiraStepDefinition extends Base {
 
     @Then("Continue butonunun gorunur ve aktif oldugu dogrulanir")
     public void continueButonununGorunurVeAktifOlduguDogrulanir() {
-        jiraPage.verifyDisplayEnabled(jiraPage.buttonContinue);
+        ReusableMethods.verifyDisplayEnabled(jiraPage.buttonContinue);
     }
 
     @Then("Continue butonuna tiklanir")
@@ -45,7 +45,7 @@ public class JiraStepDefinition extends Base {
 
     @Then("Password textboxinin gorunur ve aktif oldugu dogrulanir")
     public void passwordTextboxininGorunurVeAktifOlduguDogrulanir() {
-        jiraPage.verifyDisplayEnabled(jiraPage.textBoxPassword);
+        ReusableMethods.verifyDisplayEnabled(jiraPage.textBoxPassword);
     }
 
     @Then("Password textboxina gecerli {string} bilgisi girilir")
@@ -55,7 +55,7 @@ public class JiraStepDefinition extends Base {
 
     @Then("Login butonunun gorunur ve aktif oldugu dogrulanir")
     public void login_butonunun_gorunur_ve_aktif_oldugu_dogrulanir() {
-        jiraPage.verifyDisplayEnabled(jiraPage.buttonContinue);
+        ReusableMethods.verifyDisplayEnabled(jiraPage.buttonContinue);
     }
 
     @Then("Login butonu tiklanir")
@@ -66,7 +66,7 @@ public class JiraStepDefinition extends Base {
 
     @Then("Uygulamaya giris yapildigi dogrulanir")
     public void uygulamaya_giris_yapildigi_dogrulanir() {
-        jiraPage.verifyDisplay(jiraPage.jiraApps);
+        ReusableMethods.verifyDisplay(jiraPage.jiraApps);
         ReusableMethods.wait(2);
     }
 
@@ -78,7 +78,7 @@ public class JiraStepDefinition extends Base {
 
     @Then("Create project butonunun gorunur oldugu dogrulanir")
     public void create_project_butonunun_gorunur_oldugu_dogrulanir() {
-        jiraPage.verifyDisplay(jiraPage.optionCreateProject);
+        ReusableMethods.verifyDisplay(jiraPage.optionCreateProject);
     }
 
     @Then("Create project butonuna tiklanir")
@@ -88,7 +88,7 @@ public class JiraStepDefinition extends Base {
 
     @Then("Sol bolumde Project Templates alaninda software development linkinin gorunur oldugu dogrulanir")
     public void sol_bolumde_project_templates_alaninda_software_development_linkinin_gorunur_oldugu_dogrulanir() {
-        jiraPage.verifyDisplay(jiraPage.menuSoftwareDevelopment);
+        ReusableMethods.verifyDisplay(jiraPage.menuSoftwareDevelopment);
     }
 
     @Then("Software development linkine tiklanir")
@@ -98,7 +98,7 @@ public class JiraStepDefinition extends Base {
 
     @Then("Scrum'in gorunur oldugu dogrulanir")
     public void scrum_in_gorunur_oldugu_dogrulanir() {
-        jiraPage.verifyDisplay(jiraPage.scrum);
+        ReusableMethods.verifyDisplay(jiraPage.scrum);
     }
 
     @Then("Scrum'a tiklanir")
@@ -139,7 +139,7 @@ public class JiraStepDefinition extends Base {
 
     @Then("Proje olustugu dogrulanir")
     public void proje_olustugu_dogrulanir() {
-        jiraPage.verifyDisplay(jiraPage.textProjectName);
+        ReusableMethods.verifyDisplay(jiraPage.textProjectName);
         ReusableMethods.wait(2);
     }
 
@@ -181,7 +181,7 @@ public class JiraStepDefinition extends Base {
 
     @Then("Sprintin basladigi dogrulanir")
     public void sprintin_basladigi_dogrulanir() {
-        jiraPage.verifyDisplay(jiraPage.textProjectName);
+        ReusableMethods.verifyDisplay(jiraPage.textProjectName);
         ReusableMethods.wait(2);
     }
 

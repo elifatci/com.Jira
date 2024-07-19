@@ -57,22 +57,5 @@ public class JiraPage extends Base {
     public WebElement buttonStartSprint;
     @FindBy(xpath = "//*[text()='Start']")
     public WebElement buttonStart;
-    @FindBy(xpath = "//*[@data-testid='software-board.header.title.container']")
-    public WebElement textSprint;
-    public void clickAndSendKeys(WebElement element,String text){
-        element.click();
-        element.sendKeys(text);
-        ReusableMethods.wait(2);
-    }
-    public void verifyDisplay(WebElement element){
-        assertTrue(element.isDisplayed());
-
-    }
-
-    public void verifyDisplayEnabled(WebElement element){
-       assertTrue(element.isDisplayed());
-       assertTrue(element.isEnabled());
-
-    }
 
 }
