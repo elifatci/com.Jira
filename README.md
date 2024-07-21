@@ -1,4 +1,4 @@
-Bu projede Jira'da bir proje olusturarak yeni bir Sprint baslatilması hedeflenmistir. 
+<p><b>Bu projede Jira'da bir proje olusturarak yeni bir Sprint baslatilması hedeflenmistir.</b></p> 
 
 İlk olarak 1 User Story ve 3 Test Case yazilarak manuel testler yapilmistir.
 
@@ -81,6 +81,7 @@ Testleri sirayla calistirmak icin Runner classinda Features alanina features dos
 <p><b>Test Raporlari</b></p>
 
 Testleri calistirdiktan sonra hem Cucumber report'a hem Allure report'a bakilarak incelemeler yapilmistir.
+
 Cucumber Rapor
 
 ![Ekran görüntüsü 2024-07-19 141030](https://github.com/user-attachments/assets/7b565c83-ada0-4f7f-9eeb-c178171de93c)
